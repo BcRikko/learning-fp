@@ -1,5 +1,7 @@
 -- p.14 1.11 実習:Scalaで関数を書く
 
+module FP where
+
 -- public static int increment(int x) {
 --   return x + 1;
 -- }

@@ -12,6 +12,7 @@
 --   }
 -- }
 
+module TipCalculator where
 
 getTipPercentage names =
   if length names > 5
