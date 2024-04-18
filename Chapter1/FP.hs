@@ -7,7 +7,6 @@ module FP where
 -- }
 increment x = x + 1
 
-
 -- public static char getFirstCharacter(String s) {
 --   return s.charAt(0);
 -- }

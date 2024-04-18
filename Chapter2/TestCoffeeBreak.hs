@@ -1,8 +1,9 @@
 -- p.44 2.21 コーヒーブレイク:純粋関数のテスト
 
 module TestCoffeeBreak where
-import Test.HUnit
+
 import CoffeeBreak
+import Test.HUnit
 
 test_increment = TestCase $ do
   assertEqual "increment 1" 2 (increment 1)
@@ -19,8 +20,10 @@ test_wordScore = TestCase $ do
   assertEqual "wordScore \"\"" 0 (wordScore "")
 
 main =
-  runTestTT (test [
-    test_increment,
-    test_getFirstCharacter,
-    test_wordScore
-  ])
+  runTestTT
+    ( test
+        [ test_increment,
+          test_getFirstCharacter,
+          test_wordScore
+        ]
+    )
